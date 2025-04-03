@@ -163,6 +163,22 @@ const handleTogglStoreColors = () => {
   });
 };
 
+const handleToggleSidebarSize = () => {
+  const sidebar = document.querySelector(".sidebar");
+  const button = document.querySelector(".sidebar-toggler");
+  const closeButton = document.querySelector(".sidebar-logo-toggler");
+
+  button.addEventListener("click", () => {
+    sidebar.classList.toggle("toggled");
+    button.classList.toggle("active");
+  });
+
+  closeButton.addEventListener("click", () => {
+    sidebar.classList.remove("toggled");
+    button.classList.remove("active");
+  });
+};
+
 document.addEventListener("DOMContentLoaded", (event) => {
   handleCheckSearchInputs();
   handleToggleOrderHistory();
@@ -183,4 +199,5 @@ document.addEventListener("DOMContentLoaded", (event) => {
     ".store-form .form-block-types-fields"
   );
   handleTogglStoreColors();
+  handleToggleSidebarSize();
 });
