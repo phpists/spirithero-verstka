@@ -1739,7 +1739,7 @@ a {
     cursor: pointer;
   }
   &.active {
-    border: 2px solid #4e008e;
+    border: 1.5px solid #9b9aa5;
     &::before {
       content: "";
       display: block;
@@ -3090,6 +3090,20 @@ a {
   &.red {
     background: #f44336;
   }
+  &.outline {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #f1eef4;
+    border: 1px solid #4e008e;
+    color: #373239;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: center;
+    box-shadow: none;
+  }
 }
 
 .dark-btn {
@@ -3872,7 +3886,7 @@ a {
     border-bottom: 1px solid #cacaca;
     height: max-content;
     gap: 4px;
-    div {
+    a {
       padding: 10px 24px;
       border-radius: 22px 22px 0 0;
       border: 1px solid #cacaca;
@@ -4051,5 +4065,429 @@ a {
     width: 72px;
     border-radius: 12px;
     background: #fff;
+  }
+}
+
+.general-settings-video {
+  .general-settings-video-wrapper {
+    padding: 24px 32px 54px;
+  }
+  .general-settings-video-welcome {
+    padding: 24px;
+    background: #f1eef4;
+    border: 1px solid #cacaca;
+    border-radius: 6px;
+    margin-bottom: 24px;
+  }
+  .general-settings-video-welcome-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    margin-bottom: 24px;
+  }
+  .general-settings-video-welcome-footer {
+    display: flex;
+    align-items: start;
+    gap: 48px;
+    flex-wrap: wrap;
+  }
+  .general-settings-video-welcome-label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    margin-bottom: 8px;
+  }
+  .general-settings-video-welcome-link-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    button {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 13px 18px;
+      border: 1px solid #4e008e;
+      border-radius: 12px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: 0%;
+      color: #373239;
+      height: 42px;
+    }
+  }
+  .general-settings-video-welcome-link {
+    padding: 10px 24px 10px 16px;
+    background: #f1eef4;
+    border: 1px solid #9b9aa5;
+    border-radius: 12px;
+    a {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: 0%;
+      text-decoration: underline;
+      color: #373239;
+      display: block;
+      max-width: 304px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+  .general-settings-video-faq {
+    padding: 24px;
+    background: #f1eef4;
+    border: 1px solid #cacaca;
+    border-radius: 6px;
+  }
+  .general-settings-video-faq-header {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    button {
+      padding: 10px 18px;
+      background: #4e008e;
+      border-radius: 12px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: 0%;
+      text-align: center;
+      color: #fcfcfc;
+    }
+  }
+  .general-settings-video-faq-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+  }
+  .general-settings-video-faq-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .general-settings-video-faq-list-item {
+    display: grid;
+    grid-template-columns: 1fr max-content max-content;
+    gap: 16px;
+    align-items: end;
+    @media (max-width: 1400px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  .general-settings-video-faq-list-item-field {
+  }
+  .general-settings-video-faq-list-item-field-label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    color: #373239;
+    margin-bottom: 8px;
+  }
+  .general-settings-video-faq-list-item-field-value {
+    padding: 10px 24px;
+    border: 1px solid #9b9aa5;
+    border-radius: 12px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    color: #373239;
+
+    a {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: 0%;
+      text-decoration: underline;
+      color: #373239;
+      display: block;
+      max-width: 304px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+  .general-settings-video-faq-list-item-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    button {
+      padding: 10px 18px;
+      border: 1px solid #4e008e;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: Poppins;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: 0%;
+      text-align: center;
+      color: #373239;
+      &.delete {
+        background: #fff2f2;
+        border: 1px solid #c33e36;
+      }
+    }
+  }
+  .general-settings-lang-field {
+    .general-settings-lang-field-label {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: 0%;
+      color: #000;
+      margin-bottom: 8px;
+    }
+    textarea {
+      background: #fcfcfc;
+      width: 100%;
+      height: 92px;
+      border-radius: 8px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: 0%;
+      padding: 24px 16px;
+      color: #2c2433;
+      &::placeholder {
+        color: #9b9aa5;
+      }
+      &:focus {
+        border: 1px solid #4e008e;
+      }
+    }
+  }
+  .general-settings-submit-main-btn {
+    display: block;
+    padding: 10px 18px;
+    border-radius: 12px;
+    background: #4e008e;
+    margin: 24px auto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: right;
+    color: #fcfcfc;
+  }
+  .table-textarea {
+    background: #fcfcfc;
+    width: 100%;
+    height: 54px;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    padding: 16px;
+    color: #2c2433;
+    border: 1px solid #cacaca;
+    resize: vertical;
+    &::placeholder {
+      color: #9b9aa5;
+    }
+    &:focus {
+      border: 1px solid #4e008e;
+    }
+  }
+}
+
+.settings-general-approval-textarea {
+  resize: vertical !important;
+  padding: 24px 16px !important;
+  height: 164px !important;
+}
+
+.general-settings-content-wrapper {
+  padding: 24px 32px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0%;
+  color: #373239;
+
+  .general-settings-card {
+    background: #f1eef4;
+    border: 1px solid #cacaca;
+    padding: 24px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    .general-settings-card-title {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0%;
+      color: #373239;
+      margin-bottom: 16px;
+    }
+  }
+  input {
+    background: #fcfcff;
+    border-radius: 12px;
+    border: 1px solid #cacaca;
+    padding: 10px 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    color: #373239;
+    width: 100%;
+    &::placeholder {
+      color: #9b9aa5;
+    }
+    &:focus {
+      border: 1px solid #4e008e;
+    }
+  }
+  textarea {
+    background: #fcfcfc;
+    border: 1px solid #cacaca;
+    border-radius: 8px;
+    padding: 16px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    color: #373239;
+    margin-top: 8px;
+    resize: vertical;
+    height: 160px;
+    width: 100%;
+    &::placeholder {
+      color: #9b9aa5;
+    }
+    &:focus {
+      border: 1px solid #4e008e;
+    }
+  }
+  .general-settings-fulfillment-prices {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    align-items: end;
+    input {
+      margin-top: 8px;
+    }
+    @media (max-width: 1350px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .general-settings-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+    .general-settings-card {
+      margin-bottom: 0;
+    }
+    @media (max-width: 1350px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  .general-settings-card-fields {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    input {
+      margin-top: 8px;
+    }
+  }
+  .general-settings-card-field-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .general-settings-card-field-toggle-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .general-settings-card-fields-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    align-items: end;
+    @media (max-width: 1200px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  .general-settings-card-fulfillment-desc {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 17px;
+    margin-bottom: 24px;
+  }
+  .general-settings-card-textarea-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 8px;
+    @media (max-width: 1350px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  .general-settings-card-textarea-small {
+    height: 124px;
+  }
+  .general-settings-card-footer-tools {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+  }
+  .general-settings-card-footer-tools-color {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    input {
+      margin-top: 12px;
+      width: 24px;
+      height: 24px;
+      border-radius: 100%;
+      padding: 0;
+      border: none;
+      padding: 3px;
+      border: 1px solid #cacaca;
+    }
+    input[type="color"]::-webkit-color-swatch {
+      border: none;
+      border-radius: 50%;
+      padding: 0;
+    }
+
+    input[type="color"]::-webkit-color-swatch-wrapper {
+      border: none;
+      border-radius: 50%;
+      padding: 0;
+    }
+  }
+  .select {
+    background: #fcfcfc;
+    padding: 10px 16px;
+    select {
+      color: #605767;
+    }
+  }
+  .general-settings-card-footer-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #47424a;
+    .checkbox-input active {
+      margin: 0;
+    }
   }
 }
