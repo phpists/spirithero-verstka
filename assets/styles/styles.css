@@ -4314,7 +4314,7 @@ a {
   line-height: 22px;
   letter-spacing: 0%;
   color: #373239;
-
+  position: relative;
   .general-settings-card {
     background: #f1eef4;
     border: 1px solid #cacaca;
@@ -4488,6 +4488,39 @@ a {
     color: #47424a;
     .checkbox-input active {
       margin: 0;
+    }
+  }
+  .general-settings-footer-save {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    background: #faf2e5;
+    border: 1.5px solid #fbb041;
+    box-shadow: 0px 16px 20px 0px #2f425326;
+    border-radius: 6px;
+    position: sticky;
+    bottom: 10px;
+  }
+  .general-settings-footer-save-warning {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #373239;
+  }
+  .general-settings-footer-save-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    .btn {
+      margin: 0;
+      border-radius: 12px;
+      padding: 10px 16px;
+      height: 42px;
     }
   }
 }
