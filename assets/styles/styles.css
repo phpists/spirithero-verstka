@@ -4665,3 +4665,29 @@ a {
     }
   }
 }
+
+.success-message {
+  position: fixed;
+  z-index: 1000;
+  top: 40px;
+  right: 24px;
+  padding: 12px 26px 12px 12px;
+  background: #f4fdd4;
+  border: 1px solid #aed44c;
+  box-shadow: 0px 16px 20px 0px #2f425326;
+  border-radius: 6px;
+  display: flex;
+  align-items: start;
+  gap: 8px;
+  max-width: 360px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #373239;
+  button {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+  }
+}
