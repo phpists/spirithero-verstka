@@ -5029,3 +5029,58 @@ a {
     }
   }
 }
+
+.settings-profit-wrapper {
+  .settings-card {
+    margin: 24px 32px;
+  }
+  .settings-card-header {
+    button {
+      padding: 10px 18px !important;
+      background: #f1eef4;
+      border: 1px solid #4e008e;
+      height: 36px;
+    }
+  }
+  .settings-profit-wrapper-list {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr max-content;
+    gap: 8px 40px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    color: #373239;
+    @media (max-width: 1200px) {
+      gap: 8px;
+    }
+    input {
+      padding: 10px 16px;
+      background: #fcfcfc;
+      border-radius: 12px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: 0%;
+      color: #373239;
+      border: 1px solid #cacaca;
+      width: 100%;
+    }
+    input {
+      margin-bottom: 16px;
+    }
+  }
+  .settings-profit-wrapper-list-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  .settings-profit-wrapper-list-delete-btn {
+    padding: 13px 18px;
+    background: #fff2f2;
+    border: 1px solid #c33e36;
+    border-radius: 12px;
+    height: 42px;
+  }
+}
