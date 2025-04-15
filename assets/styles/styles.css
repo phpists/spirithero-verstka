@@ -2737,6 +2737,7 @@ a {
     left: 0 !important;
     opacity: 0 !important;
     cursor: pointer;
+    margin: 0 !important;
   }
   .toggle-wrapper-block {
     display: flex;
