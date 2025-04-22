@@ -153,7 +153,7 @@ const handleTogglStoreColors = () => {
 
   cards.forEach((card) => {
     const button = card.querySelector(".store-form-color-card-toggle-btn");
-    button.addEventListener("click", () => {
+    button?.addEventListener("click", () => {
       const isActive = card.classList.contains("active");
 
       button.innerHTML = isActive ? "+" : "-";
@@ -168,12 +168,12 @@ const handleToggleSidebarSize = () => {
   const button = document.querySelector(".sidebar-toggler");
   const closeButton = document.querySelector(".sidebar-logo-toggler");
 
-  button.addEventListener("click", () => {
+  button?.addEventListener("click", () => {
     sidebar.classList.toggle("toggled");
     button.classList.toggle("active");
   });
 
-  closeButton.addEventListener("click", () => {
+  closeButton?.addEventListener("click", () => {
     sidebar.classList.remove("toggled");
     button.classList.remove("active");
   });
