@@ -5303,3 +5303,17 @@ a {
     }
   }
 }
+.load-more-btn {
+  display: block;
+  padding: 10px 18px;
+  border-radius: 12px;
+  background: #4e008e;
+  margin: 24px auto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: right;
+  color: #fcfcfc;
+  width: max-content;
+}
