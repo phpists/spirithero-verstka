@@ -5321,6 +5321,9 @@ a {
   width: max-content;
 }
 
+.preloader-wrapper {
+  position: relative;
+}
 .preloader {
   position: absolute;
   top: 0;
