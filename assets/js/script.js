@@ -179,6 +179,32 @@ const handleToggleSidebarSize = () => {
   });
 };
 
+const handleToggleProductModalTabs = () => {
+  const tabButtons = document.querySelectorAll("[data-product-tab-btn]");
+  const tabContents = document.querySelectorAll(".edit-product-modal-tab");
+
+  tabButtons?.forEach((button) => {
+    button.addEventListener("click", () => {
+      tabButtons.forEach((btn) => btn.classList.remove("active"));
+
+      button.classList.add("active");
+
+      const targetClass = button.getAttribute("data-product-tab-btn");
+
+      tabContents.forEach((tab) => {
+        tab.classList.remove("active");
+      });
+
+      const targetTab = document.querySelector(
+        `.edit-product-modal-tab.${targetClass}`
+      );
+      if (targetTab) {
+        targetTab.classList.add("active");
+      }
+    });
+  });
+};
+
 document.addEventListener("DOMContentLoaded", (event) => {
   handleCheckSearchInputs();
   handleToggleOrderHistory();
@@ -200,4 +226,5 @@ document.addEventListener("DOMContentLoaded", (event) => {
   );
   handleTogglStoreColors();
   handleToggleSidebarSize();
+  handleToggleProductModalTabs();
 });
