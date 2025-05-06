@@ -5466,7 +5466,7 @@ a {
       background: #fbf8fd;
     }
     .modal-content {
-      max-width: 1428px !important;
+      max-width: 1700px !important;
     }
     .table-product-image {
       height: 48px;
@@ -5484,6 +5484,7 @@ a {
         color: #373239;
         width: 94px;
         height: 42px;
+        text-align: center;
         &.longer {
           width: 118px;
         }
@@ -5696,6 +5697,7 @@ a {
     grid-template-columns: repeat(8, 1fr);
     gap: 8px;
     input {
+      text-align: center;
       background: #fcfcff;
       border-radius: 12px;
       border: 1px solid #cacaca;
