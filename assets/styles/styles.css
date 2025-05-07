@@ -5692,6 +5692,11 @@ a {
     margin-bottom: 28px;
     padding: 0 6px;
   }
+  .edit-product-modal-tab-inputs-save-btn {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: flex-end;
+  }
   .edit-product-modal-tab-inputs-card-list {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
