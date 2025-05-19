@@ -1544,7 +1544,7 @@ a {
   }
   .catalog-page-products-list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 24px 2px;
     grid-template-rows: max-content;
     @media (max-width: 1300px) {
@@ -1574,7 +1574,7 @@ a {
     border: 1px solid transparent;
     &:hover {
       border: 1px solid #cfcdd0;
-      box-shadow: 1px 4px 11.7px 0px #9986a338;
+      box-shadow: 0px 0px 5px 2px #914cb845;
       background: #fbfbfb;
       .catalog-page-products-card-colors {
         opacity: 1;
@@ -1586,11 +1586,14 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-weight: 700;
     font-size: 12px;
-    font-weight: 400;
     line-height: 16px;
-    color: #2e2c30;
-    margin-bottom: 14px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #373239;
+
+    margin-bottom: 4px;
     text-align: center;
 
     .checkbox-input {
@@ -1605,11 +1608,19 @@ a {
     height: 208px;
     object-fit: contain;
   }
+  .catalog-page-products-card-price {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 1%;
+    text-align: center;
+    color: #373239;
+  }
   .catalog-page-products-card-colors {
     position: absolute;
-    bottom: 8px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1628,6 +1639,7 @@ a {
       justify-content: center;
       flex-shrink: 0;
       cursor: pointer;
+      background: #fcfcfc;
       span {
         display: flex;
         border: 1px solid #cfcdd0;
