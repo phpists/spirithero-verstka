@@ -1546,7 +1546,7 @@ a {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 24px 2px;
-    grid-template-rows: max-content;
+    grid-auto-rows: max-content;
     @media (max-width: 1300px) {
       grid-template-columns: repeat(3, 1fr);
     }
