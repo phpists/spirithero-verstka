@@ -598,7 +598,84 @@
             />
           </button>
         </div>
-
+        <div
+          class="edit-order-modal manager-modal overlay product-search-modal"
+        >
+          <div class="modal">
+            <button class="modal-close">
+              <img src="./assets/img/close.svg" alt="" />
+            </button>
+            <div class="modal-content">
+              <div class="modal-title">Conect product</div>
+              <div class="input-wrapper">
+                <div class="input-wrapper-label">Search products</div>
+                <input type="text" placeholder="Enter" />
+              </div>
+              <div class="product-search-modal-table">
+                <div class="orders-page-table-wrapper">
+                  <table class="orders-page-table">
+                    <thead>
+                      <tr>
+                        <th style="width: 20px">
+                          <div class="checkbox-input"></div>
+                        </th>
+                        <th style="width: 90px">
+                          <div>
+                            Organization Type
+                            <img src="./assets/img/CaretUpDown.svg" alt="" />
+                          </div>
+                        </th>
+                        <th>
+                          <div class="edit-product-modal-header-bg">
+                            Image
+                            <img src="./assets/img/CaretUpDown.svg" alt="" />
+                          </div>
+                        </th>
+                        <th>
+                          <div class="edit-product-modal-header-bg">
+                            Vendor
+                            <img src="./assets/img/CaretUpDown.svg" alt="" />
+                          </div>
+                        </th>
+                        <th>
+                          <div class="edit-product-modal-header-bg">
+                            SKU
+                            <img src="./assets/img/CaretUpDown.svg" alt="" />
+                          </div>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><div class="checkbox-input active"></div></td>
+                        <td>
+                          <div class="text-overflow">
+                            Large Groups 100+ People
+                          </div>
+                        </td>
+                        <td>
+                          <img
+                            src="./assets/img/Foto.png"
+                            alt=""
+                            class="table-product-image"
+                          />
+                        </td>
+                        <td>CustomCat</td>
+                        <td>80752</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button class="modal-submit-btn cancel" type="button">
+                  Cancel
+                </button>
+                <button class="modal-submit-btn" type="submit">Connect</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="edit-order-modal overlay edit-product-modal">
           <div class="modal">
             <button class="modal-close">
@@ -627,6 +704,12 @@
                   </div>
                 </div>
                 <div class="edit-product-modal-top-card">
+                  <button
+                    class="edit-product-modal-top-connect-btn"
+                    data-modal-btn="product-search-modal"
+                  >
+                    Connect product
+                  </button>
                   <div>
                     <div class="edit-product-modal-top-card-label">
                       Predefined Tags: <span>*</span>
@@ -789,7 +872,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="edit-product-modal-tab-inputs-save-btn"><button class="modal-submit-btn">Save</button></div>
+                <div class="edit-product-modal-tab-inputs-save-btn">
+                  <button class="modal-submit-btn">Save</button>
+                </div>
                 <div class="edit-product-modal-tab-actions-wrapper">
                   <div>
                     Delete Bulk Variants

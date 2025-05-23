@@ -22,6 +22,7 @@ textarea {
   outline: none;
   font-family: "Poppins", sans-serif !important;
   outline: none;
+  -webkit-appearance: none;
 }
 
 a {
@@ -5828,5 +5829,52 @@ a {
   }
   input[type="number"] {
     -moz-appearance: textfield; /* Firefox */
+  }
+}
+
+.edit-product-modal-top-connect-btn {
+  display: block;
+  padding: 10px 16px;
+  border-radius: 12px;
+  background: #4e008e;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #fcfcfc;
+  margin-left: auto;
+  margin-bottom: 24px;
+}
+
+.product-search-modal {
+  z-index: 1000;
+  input {
+    background: #f1eef4 !important;
+  }
+  .orders-page-table-wrapper {
+    min-height: max-content;
+    margin-bottom: 0;
+  }
+  .product-search-modal-table {
+    margin-top: 24px;
+    .table-product-image {
+      width: 48px;
+      height: 48px;
+    }
+    th:nth-child(1) {
+      padding: 12px;
+    }
+    th {
+      padding: 12px 0;
+      div:not(.checkbox-input) {
+        padding: 12px;
+      }
+      .edit-product-modal-header-bg {
+        background: #f4fdd4;
+        padding: 11px 0;
+        height: 38px;
+      }
+    }
   }
 }
