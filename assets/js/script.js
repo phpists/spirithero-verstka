@@ -107,26 +107,28 @@ const handleToggleFormTags = () => {
 };
 
 const handleChangeCounter = () => {
-  const counter = document.querySelector(".counter");
-  if (counter) {
-    const input = counter.querySelector("input");
-    const [remove, add] = counter.querySelectorAll("button");
+  const counters = document.querySelectorAll(".counter");
+  counters.forEach((counter) => {
+    if (counter) {
+      const input = counter.querySelector("input");
+      const [remove, add] = counter.querySelectorAll("button");
 
-    add.addEventListener("click", () => {
-      const inputValue = Number(input.value);
-      input.value = inputValue + 1;
-    });
+      add.addEventListener("click", () => {
+        const inputValue = Number(input.value);
+        input.value = inputValue + 1;
+      });
 
-    remove.addEventListener("click", () => {
-      const inputValue = Number(input.value);
-      console.log(inputValue);
-      if (inputValue <= 0) {
-        input.value = 0;
-      } else {
-        input.value = inputValue - 1;
-      }
-    });
-  }
+      remove.addEventListener("click", () => {
+        const inputValue = Number(input.value);
+        console.log(inputValue);
+        if (inputValue <= 0) {
+          input.value = 0;
+        } else {
+          input.value = inputValue - 1;
+        }
+      });
+    }
+  });
 };
 
 const handleTogglePayoutsTabs = () => {
@@ -205,6 +207,21 @@ const handleToggleProductModalTabs = () => {
   });
 };
 
+const handleToggleProductsGroup = () => {
+  const items = document.querySelectorAll(
+    ".stores-edit-products-content-group"
+  );
+
+  items.forEach((item) => {
+    const header = item.querySelector(
+      ".stores-edit-products-content-header-arrow"
+    );
+    header.addEventListener("click", () => {
+      item.classList.toggle("active");
+    });
+  });
+};
+
 document.addEventListener("DOMContentLoaded", (event) => {
   handleCheckSearchInputs();
   handleToggleOrderHistory();
@@ -227,4 +244,5 @@ document.addEventListener("DOMContentLoaded", (event) => {
   handleTogglStoreColors();
   handleToggleSidebarSize();
   handleToggleProductModalTabs();
+  handleToggleProductsGroup();
 });
