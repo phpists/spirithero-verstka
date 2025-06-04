@@ -6085,6 +6085,10 @@ a {
 .filter-header-status {
   border-top: 1px solid #9b9aa5;
   cursor: pointer;
+&:hover {
+        background: #3d145e; color: #fcfcfc;
+
+}  
   &.active {
     background: #3d145e;
     box-shadow: 0px 0px 5px 2px #914cb845;
